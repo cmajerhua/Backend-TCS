@@ -1,10 +1,13 @@
 spring:
   datasource:
-    driverClassName: org.postgresql.Driver    
+    #driverClassName: org.postgresql.Driver    
     #url: jdbc:postgresql://172.16.64.133/tcs
-    url: jdbc:postgresql://67.205.143.180/tcs2
-    username: modulo4
-    password: modulo4
+    #url: jdbc:postgresql://67.205.143.180/tcs2
+    #username: modulo4
+    #password: modulo4
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
 
 server:
    #port: 8080
