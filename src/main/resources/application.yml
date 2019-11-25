@@ -7,14 +7,15 @@ spring:
     password: modulo4
 
 server:
-   port: 8080
+   #port: 8080
+   port: 80
    
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/ #https://proyecto9676.herokuapp.com/eureka 
+      defaultZone: https://system32-backend.herokuapp.com/ #http://localhost:8761/eureka/ 
   instance:
-    hostname: localhost
+    hostname: https://system32-backend.herokuapp.com/
     nonSecurePort: 8080
 
 banner:
